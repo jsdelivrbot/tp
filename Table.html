@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+ <html ng-app= "tunningTugger">
+ <head>
+ 	<title>Tunning</title>
+
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Angular Material style sheet -->
+  	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  	<link rel="stylesheet" type="text/css" href="style.css">
+
+ </head>
+ <body>
+
+ 	<div ng-Controller = "myController">
+
+ 		<h1>TuggerTracker Tunner (AKA "Triple T")</h1>
+ 		<h2>Punto más cercano: X: {{ arregloDeDatos[0].x }} Y: {{ arregloDeDatos[0].y }}</h2>
+		<md-list>
+			<md-list-item class="md-2-line" ng-repeat="item in arregloDeDatos">
+				<div class="md-list-item-text">
+					<input type="text" name="">
+					<h4> X: {{ item.x }} - Y: {{ item.y }} - chipid: {{ item.chipid }} - updated: {{ item.time }} - latencia: {{ item.latency }}</h4>
+					<h4> distancia: {{ item.distancia }}</h4>
+				</div>
+			</md-list-item>
+		</md-list>
+			
+
+	</div>
+
+
+ 	<script src="angular.min.js"></script>
+	<script src="angular-aria.min.js"></script>
+	<script src="angular-animate.js"></script>
+	<script src="angular-messages.js"></script>
+	<script type="text/javascript" src="angular-material.min.js"></script>
+	<script src="d3.v3.min.js"></script>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+
+ 	<script type="text/javascript" src = "tunner.js" ></script>
+ </body>
+ </html>

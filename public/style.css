@@ -1,0 +1,75 @@
+body {
+    background-color: #EEEEEE;
+}
+
+.display {
+	/*float: center;*/
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 10px 20%;
+
+}
+
+.mouseovered{
+	fill: grey;
+	opacity: 1;
+	stroke-width: 2px;
+	stroke: green;
+}
+
+.control {
+	float: left;
+}
+
+.control textarea {
+	margin: 10px;
+}
+
+svg {
+	border: 1px solid black;
+}
+
+.grass {
+	fill: rgb(224,224,224);
+	opacity: 1;
+	stroke-width: 1px;
+	stroke: rgb(180,180,180);
+}
+
+.rock {
+	fill: none;
+	/*opacity: 0.3;*/
+	/*stroke-width: 1px;*/
+	stroke: none;
+}
+
+.border{
+	fill: #F0F0F0;
+	stroke-width:1px;
+	stroke: black;
+}
+
+.lava {
+	fill: #B3210B;
+	stroke-width: 1px;
+	stroke: #FF6600;
+}
+
+.position {
+	fill: #C9EBF0;
+	stroke-width: 3px;
+	stroke: #2973F2;
+}
+
+.positionNumber {
+	fill: #0E1A9E;
+	text-anchor: middle;
+}
+
+.path {
+	stroke-width: 3px;
+	stroke: #2973F2;
+}
